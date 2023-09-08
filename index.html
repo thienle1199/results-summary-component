@@ -18,68 +18,93 @@
   </head>
   <body class="bg-verylightblue">
     <div
-      class="container mx-auto flex flex-col items-center justify-center w-full h-screen"
+      class="container mx-auto flex flex-col items-center justify-center w-full full:h-screen"
     >
-      <div class="flex flex-col max-w-[736px] bg-white md:flex-row">
+      <div
+        class="flex flex-col max-w-screen-full bg-white full:flex-row full:rounded-[32px]"
+      >
         <section
-          class="py-9 rounded-3xl flex flex-col items-center flex-1 bg-gradient-to-t from-lightroyalblue to-lightslateblue text-center"
+          class="pt-[24px] pb-[40px] full:py-[38px] rounded-b-[32px] full:rounded-[32px] flex flex-col items-center flex-1 bg-gradient1 text-center"
         >
-          <h1 class="text-2xl font-bold text-lightblue">Your Result</h1>
+          <h1
+            class="text-heading-m-sm full:text-heading-m font-bold text-lightblue"
+          >
+            Your Result
+          </h1>
 
           <div
-            class="flex mt-9 rounded-full bg-gradient-to-t from-persianblue to-violetblue w-[200px] h-[200px] flex-col items-center justify-center"
+            class="flex mt-9 rounded-full bg-gradient2 full:w-[200px] full:h-[200px] w-[140px] h-[140px] flex-col items-center justify-center"
           >
-            <span class="text-7xl font-extrabold text-white">72</span>
-            <span class="text-lightblue opacity-50">of 100</span>
+            <span
+              class="text-heading-xl-sm full:text-heading-xl font-extrabold text-white"
+              >72</span
+            >
+            <span
+              class="text-lightblue opacity-50 text-body-sm full:text-body font-bold"
+              >of 100</span
+            >
           </div>
-          <div class="flex flex-col gap-3 mt-7">
-            <span class="text-white text-3xl font-bold">Great</span>
+          <div class="flex flex-col gap-3 mt-7 mx-[50px]">
+            <span
+              class="text-white text-heading-l-sm full:text-heading-l font-bold"
+              >Great</span
+            >
 
-            <p class="text-lightblue">
+            <p class="text-lightblue text-body-sm full:text-body">
               You scored higher than 65% of the people who have taken these
               tests.
             </p>
           </div>
         </section>
         <section class="py-9 px-10 flex-1">
-          <h1 class="text-2xl font-bold">Summary</h1>
+          <h1 class="text-heading-m-sm full:text-heading-m font-bold">
+            Summary
+          </h1>
 
-          <div class="flex flex-col gap-4 mt-7">
-            <div class="flex justify-between h-14 items-center">
+          <div class="flex flex-col gap-[16px] mt-[24px] full:mt-[28px]">
+            <div
+              class="flex justify-between p-4 rounded-xl items-center bg-red-95-white"
+            >
               <div class="flex gap-2">
                 <img src="assets/images/icon-reaction.svg" alt="" />
-                <span>Reaction</span>
+                <span class="text-red">Reaction</span>
               </div>
               <span>80 / 100 </span>
             </div>
 
-            <div class="flex justify-between h-14 items-center">
+            <div
+              class="flex justify-between p-4 rounded-xl items-center bg-yellow-95-white"
+            >
               <div class="flex gap-2">
                 <img src="assets/images/icon-memory.svg" alt="" />
-                <span>Memory</span>
+                <span class="text-yellow">Memory</span>
               </div>
               <span>92 / 100 </span>
             </div>
 
-            <div class="flex justify-between h-14 items-center">
+            <div
+              class="flex justify-between p-4 rounded-xl items-center bg-green-95-white"
+            >
               <div class="flex gap-2">
                 <img src="assets/images/icon-verbal.svg" alt="" />
-                <span>Verbal</span>
+                <span class="text-green">Verbal</span>
               </div>
               <span>61 / 100 </span>
             </div>
 
-            <div class="flex justify-between h-14 items-center">
+            <div
+              class="flex justify-between p-4 rounded-xl items-center bg-blue-95-white"
+            >
               <div class="flex gap-2">
                 <img src="assets/images/icon-visual.svg" alt="" />
-                <span>Visual</span>
+                <span class="text-blue">Visual</span>
               </div>
               <span>72 / 100 </span>
             </div>
           </div>
 
           <button
-            class="flex w-full text-white rounded-[128px] py-4 mt-[56px] justify-center bg-darknavy hover:bg-lightroyalblue"
+            class="flex w-full text-white rounded-[128px] py-4 mt-[24px] full:mt-[41px] justify-center bg-darknavy hover:bg-lightroyalblue"
           >
             Continue
           </button>
