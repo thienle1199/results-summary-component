@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="bg-verylightblue">
+    <div
+      class="container mx-auto flex flex-col items-center justify-center w-full h-screen"
+    >
+      <div class="flex flex-col max-w-[736px] bg-white md:flex-row">
+        <section
+          class="py-9 rounded-3xl flex flex-col items-center flex-1 bg-gradient-to-t from-lightroyalblue to-lightslateblue text-center"
+        >
+          <h1 class="text-2xl font-bold text-lightblue">Your Result</h1>
+
+          <div
+            class="flex mt-9 rounded-full bg-gradient-to-t from-persianblue to-violetblue w-[200px] h-[200px] flex-col items-center justify-center"
+          >
+            <span class="text-7xl font-extrabold text-white">72</span>
+            <span class="text-lightblue opacity-50">of 100</span>
+          </div>
+          <div class="flex flex-col gap-3 mt-7">
+            <span class="text-white text-3xl font-bold">Great</span>
+
+            <p class="text-lightblue">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </section>
+        <section class="py-9 px-10 flex-1">
+          <h1 class="text-2xl font-bold">Summary</h1>
+
+          <div class="flex flex-col gap-4 mt-7">
+            <div class="flex justify-between h-14 items-center">
+              <div class="flex gap-2">
+                <img src="assets/images/icon-reaction.svg" alt="" />
+                <span>Reaction</span>
+              </div>
+              <span>80 / 100 </span>
+            </div>
+
+            <div class="flex justify-between h-14 items-center">
+              <div class="flex gap-2">
+                <img src="assets/images/icon-memory.svg" alt="" />
+                <span>Memory</span>
+              </div>
+              <span>92 / 100 </span>
+            </div>
+
+            <div class="flex justify-between h-14 items-center">
+              <div class="flex gap-2">
+                <img src="assets/images/icon-verbal.svg" alt="" />
+                <span>Verbal</span>
+              </div>
+              <span>61 / 100 </span>
+            </div>
+
+            <div class="flex justify-between h-14 items-center">
+              <div class="flex gap-2">
+                <img src="assets/images/icon-visual.svg" alt="" />
+                <span>Visual</span>
+              </div>
+              <span>72 / 100 </span>
+            </div>
+          </div>
+
+          <button
+            class="flex w-full text-white rounded-[128px] py-4 mt-[56px] justify-center bg-darknavy hover:bg-lightroyalblue"
+          >
+            Continue
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
